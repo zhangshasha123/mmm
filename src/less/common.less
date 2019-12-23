@@ -1,0 +1,194 @@
+/* 样式初始化：为了保证所有的浏览器显示是一致的 */
+@charset "utf-8";
+
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 给body添加通用的样式 */
+body {
+  font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+
+/*去除边框*/
+fieldset,
+img,
+input,
+button,
+textarea {
+  border: none;
+  /*去除的蓝色小边框*/
+  outline-style: none;
+}
+
+/*禁止表单域缩放*/
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: #969696;
+  /* 移动端a标签点击会高亮，设置颜色为透明的 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 图片自适应 */
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* 把所有的标题的样式全部重置了 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* 字体图标  i:icon   bootstrap*/
+em,
+i {
+  font-style: normal;
+}
+
+/* 提供了一些公共类 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.header {
+  height: 50/25rem;
+  background: #ff841d;
+  border-bottom: 1/25rem solid #e6e6e6;
+  position: relative;
+  .logo {
+    padding: 12/25rem;
+    width: 75%;
+    margin-left: 5/25rem;
+    float: left;
+
+    img {
+      max-height: 25/25rem;
+      overflow: hidden;
+    }
+  }
+
+  .appdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7/25rem;
+    img {
+      max-height: 34/25rem;
+      overflow: hidden;
+    }
+  }
+}
+
+#foot {
+  .foot_top {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 25px;
+    clear: both;
+    background: #efefef;
+    a {
+      box-sizing: border-box;
+      float: left;
+      font-size: 14px;
+      border-right: 1px solid #c4c4c4;
+      width: 30%;
+      text-align: center;
+    }
+  }
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #666;
+    background: #efefef;
+  }
+}
