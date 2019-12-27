@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  background-color: #ff841d;
+}
+.header .wt50 {
+  width: 1rem /* 50/50 */;
+  height: 1rem /* 50/50 */;
+}
+.header .ids-title {
+  flex: 1;
+  line-height: 1rem /* 50/50 */;
+  font-size: 0.4rem /* 20/50 */;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.pages {
+  height: 0.8rem /* 40/50 */;
+  background-color: #e6e6e6;
+  display: flex;
+}
+.pages div {
+  flex: 1;
+  line-height: 0.8rem /* 40/50 */;
+  text-align: center;
+}
+.pages div button {
+  width: 1.2rem /* 60/50 */;
+  height: 0.6rem /* 30/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+}
+.pages div form select {
+  width: 1.2rem /* 60/50 */;
+  height: 0.6rem /* 30/50 */;
+  border: 1px solid #ccc;
+}
+.product .product-list li {
+  padding: 0.2rem /* 10/50 */;
+  border-bottom: 0.02rem /* 1/50 */ solid #e7e7e7;
+}
+.product .product-list li a {
+  display: block;
+  overflow: hidden;
+  display: flex;
+}
+.product .product-list li a .pro-img {
+  overflow: hidden;
+  width: 2rem /* 100/50 */;
+  height: 2rem /* 100/50 */;
+}
+.product .product-list li a .pro-img img {
+  width: 2rem /* 100/50 */;
+  height: 2rem /* 100/50 */;
+}
+.product .product-list li a .into {
+  flex: 1;
+  padding-left: 0.2rem /* 10/50 */;
+}
+.product .product-list li a .into .introduce {
+  font-size: 0.28rem /* 14/50 */;
+  color: #000;
+}
+.product .product-list li a .into .introduce span {
+  color: red;
+}
+.product .product-list li a .into .bottom {
+  margin-top: 0.4rem /* 20/50 */;
+  overflow: hidden;
+}
+.product .product-list li a .into .bottom p {
+  float: left;
+}
+.product .product-list li a .into .bottom span {
+  float: right;
+}
+.product .more-bar {
+  height: 0.6rem /* 30/50 */;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  border-radius: 0.1rem /* 5/50 */;
+}
+.product .more-bar a {
+  text-align: center;
+  display: block;
+  line-height: 0.6rem /* 30/50 */;
+  color: #000;
+  font-family: å®‹ä½“;
+}

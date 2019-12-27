@@ -1,0 +1,48 @@
+.category {
+  overflow: hidden;
+}
+.category .rows ul {
+  overflow: hidden;
+}
+.category .rows ul li {
+  overflow: hidden;
+}
+.category .rows ul li .title {
+  color: #000;
+  width: 100%;
+  height: 0.8rem /* 40/50 */;
+  font-size: 0.36rem /* 18/50 */;
+  background-color: #e6e6e6;
+  font-weight: bold;
+  display: block;
+  line-height: 0.8rem /* 40/50 */;
+  text-indent: 0.2rem /* 10/50 */;
+  border: 1px solid #ccc;
+}
+.category .rows ul li .title strong {
+  position: absolute;
+  right: 0.3rem /* 15/50 */;
+}
+.category .rows ul li .category-list {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  overflow: over;
+}
+.category .rows ul li .category-list .ct-list {
+  display: block;
+  width: 33.3%;
+  float: left;
+  height: 0.8rem /* 40/50 */;
+  line-height: 0.8rem /* 40/50 */;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.category .rows ul li .category-list .ct-list a {
+  display: block;
+  color: #000;
+}
+.category .rows ul li .category-list.hide {
+  display: none;
+}

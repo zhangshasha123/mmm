@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="wt50"></div>
+        <div class="ids-title">白菜价-淘宝内部券</div>
+        <div class="appload">
+            <a href="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 主体内容 -->
+    <main class="couple-title">
+        <!-- 头部导航栏 -->
+        <div class="bcj-title">
+            <div class="bcj-nav">
+                <div class="bcj-swaper">
+                    <ul class="tab">
+                        <!-- <li>
+                            <a href="#">全部</a>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="bcj-list">
+            <ul class="products">
+                <!-- <li class="product">
+                    <a href=""></a>
+                    <div class="list-left">
+                        <a href="">
+                            <img src="https://gd2.alicdn.com/imgextra/i2/2551982558/TB2H6XhamiJ.eBjSspiXXbqAFXa_!!2551982558.jpg_400x400.jpg">
+                        </a>
+                    </div>
+                    <div class="list-right">
+                        <p class="mail">[包邮]多功能车载手机支架仪表台支架仪表</p>
+                        <div class="count">
+                            <span>券后￥9.9</span>
+                            <span>￥19.9</span>
+                        </div>
+                        <div class="icon">
+                            <i>
+                            <em></em>
+                            <span>1%</span>
+                            </i>
+                            <b>已领82张</b>
+                        </div>
+                        <div class="bcj-bd">
+                            <a href="">点此领10元优惠券</a>
+                            <a href="">下单链接</a>
+                        </div>
+
+                    </div>
+                </li> -->
+
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="login">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"> <strong> ^ </strong> 返回顶部</a>
+        </div>
+        <div class="downLoad">
+            <p>
+                <a href="">手机app下载</a>
+                <a href="">慢慢买手机版</a> --掌声比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <li data-id={{v.titleId}} class="mask">
+            <a href="#">{{v.title}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <li class="product">
+
+            <div class="list-left">
+                <a href="">
+                    <img src="{{v.productImg}}">
+                </a>
+            </div>
+            <div class="list-right">
+                <p class="mail">{{v.productName}}</p>
+                <div class="count">
+                    <span>{{v.productPrice}}</span>
+                    <span>{{v.productPrice}}</span>
+                </div>
+                <div class="icon">
+                    <i>
+                    <em></em>
+                    <span>{{v.productCouponRemain}}</span>
+                    </i>
+                    <!-- <b>已领82张</b> -->
+                </div>
+                <div class="bcj-bd">
+                    <a href="">{{v.productCoupon.val}}</a>
+                    <a href="">下单链接</a>
+                </div>
+
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/baicaijia.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="logo">
+            <a href="" title="慢慢买">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="appload">
+            <a href="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 搜索框 -->
+    <section class="search">
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button>搜索</button>
+    </section>
+    <!-- 面包屑 -->
+    <section class="bread">
+        <a href="index.html">首页 ></a>
+        <a href="#">全部分类</a>
+        <a href="#"> > > </a>
+        <a href="#" class="selected">筛选</a>
+    </section>
+    <!-- 产品区域 -->
+    <section class="product">
+        <div class="addbox">
+            <!-- <div class="title">
+                <div class="pro-title">奥林巴斯/OLYMPUS TG-4 1600万像素 数码相机</div>
+                <div> <img class="imgs" src="./images/ic_mall.png" alt=""> </div>
+            </div>
+            <div class="tab">
+                <ul>
+                    <li>
+                        <a href="">比价购买</a>
+                    </li>
+                    <li>
+                        <a href="">产品参数</a>
+                    </li>
+                    <li>
+                        <a href="">评价（1234）</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mall">
+                <a href="" class="mall-left"> <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt=""> 京东商城</a>
+                <div class="mall-right">
+                    <span>￥5299.00</span>
+                    <button>去购买</button>
+                </div> -->
+
+            <!-- </div> -->
+        </div>
+        <div class="notice">* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟</div>
+        <div class="news">
+            <div> 网友评价</div>
+            <ul>
+                <li class="talk">
+                    <!-- <div class="name">
+                        <span>胡**鹏</span>
+                        <span class="fr">2019/12/24</span>
+                    </div>
+                    <div>购买自：亚马逊</div>
+                    <div class="content">
+                        好东西啊！！拿去长滩岛潜水用防水完爆其他相机！像素还可以，还有长曝光！可以拍出星轨！但快门速度慢了点在光线弱的地方快门特别慢还不能调，还有不防沙子，镜头周边要是进沙子了清洗起来不太方便（要用牙刷）用了一段时间基本没什么问题！好评！
+                    </div> -->
+                </li>
+
+            </ul>
+            <div class="more">查看更多评价</div>
+        </div>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="login">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"> <strong> ^ </strong> 返回顶部</a>
+        </div>
+        <div class="downLoad">
+            <p>
+                <a href="">手机app下载</a>
+                <a href="">慢慢买手机版</a> --掌声比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+
+
+
+    <script type="text/html" id="tpl">
+
+        <div class="title">
+            <div class="pro-title">{{result.productName}}</div>
+            <div> <img class="imgs" src="{{result.productImg.src}}" alt=""> </div>
+        </div>
+        <div class="tab">
+            <ul>
+                <li>
+                    <a href="">比价购买</a>
+                </li>
+                <li>
+                    <a href="">产品参数</a>
+                </li>
+                <li>
+                    <a href="">评价（1234）</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mall">
+            <a href="" class="mall-left"> <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt=""> 京东商城</a>
+            <div class="mall-right">
+                <span>{{result.bjShop}}</span>
+                <button>去购买</button>
+            </div>
+        </div>
+
+    </script>
+
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <div class="name">
+            <span>{{v.comName}}</span>
+            <span class="fr">{{v.comTime}}</span>
+        </div>
+        <div>{{v.comFrom}}</div>
+        <div class="content">
+            {{v.comContent}}
+        </div>
+        {{/each}}
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>

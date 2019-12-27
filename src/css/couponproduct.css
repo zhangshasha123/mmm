@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  background-color: #f4483e;
+}
+.header .wt50 {
+  width: 1rem /* 50/50 */;
+  height: 1rem /* 50/50 */;
+}
+.header .ids-title {
+  flex: 1;
+  line-height: 1rem /* 50/50 */;
+  font-size: 0.4rem /* 20/50 */;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.product-list .title {
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.6rem /* 30/50 */;
+  text-align: center;
+  color: #999999;
+}
+.product-list .product .content li {
+  padding: 0.2rem /* 10/50 */;
+  display: flex;
+  margin-bottom: 0.1rem /* 5/50 */;
+  border-bottom: 1px solid #ccc;
+}
+.product-list .product .content li .pic {
+  margin-right: 0.1rem /* 5/50 */;
+}
+.product-list .product .content li .pic img {
+  height: 1rem /* 50/50 */;
+  width: 1rem /* 50/50 */;
+}
+.product-list .product .content li .disc {
+  flex: 1;
+  font-size: 0.24rem /* 12/50 */;
+  font-weight: normal;
+  color: #000;
+}
+.product-list .product .content li .disc p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 0.16rem /* 8/50 */;
+  margin-bottom: 0.2rem /* 10/50 */;
+}
+.product-list .product .content li .disc p:nth-child(3) {
+  color: orange;
+  font-weight: lighter;
+}

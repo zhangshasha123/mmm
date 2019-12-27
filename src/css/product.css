@@ -1,0 +1,99 @@
+.bread {
+  height: 0.8rem /* 40/50 */;
+  background-color: #e6e6e6;
+  line-height: 0.8rem /* 40/50 */;
+  position: relative;
+  font-size: 0.32rem /* 16/50 */;
+  padding-left: 0.3rem /* 15/50 */;
+}
+.bread a {
+  color: #000;
+}
+.bread .selected {
+  position: absolute;
+  right: 0.3rem /* 15/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+  border: 1px solid #ccc;
+}
+.product .title {
+  width: 100%;
+  margin-bottom: 0.4rem /* 20/50 */;
+}
+.product .title .pro-title {
+  height: 0.8rem /* 40/50 */;
+  line-height: 0.8rem /* 40/50 */;
+  text-align: center;
+  font-size: 0.28rem /* 14/50 */;
+  color: #000;
+}
+.product .title .imgs {
+  display: block;
+  height: 3.4rem /* 170/50 */;
+  margin: 0 auto;
+}
+.product .tab {
+  height: 0.7rem /* 35/50 */;
+  background-color: orange;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.product .tab ul {
+  display: flex;
+}
+.product .tab ul li {
+  flex: 1;
+  text-align: center;
+  line-height: 0.72rem /* 36/50 */;
+  border-right: 1px solid #000;
+}
+.product .tab ul li a {
+  display: block;
+  color: #fff;
+  font-size: 0.32rem /* 16/50 */;
+}
+.product .mall {
+  height: 0.8rem /* 40/50 */;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.product .mall .mall-left {
+  float: left;
+  line-height: 0.8rem /* 40/50 */;
+  margin-left: 0.3rem /* 15/50 */;
+}
+.product .mall .mall-left img {
+  width: 0.32rem /* 16/50 */;
+  height: 0.32rem /* 16/50 */;
+}
+.product .mall .mall-right {
+  float: right;
+  line-height: 0.8rem /* 40/50 */;
+  margin-right: 0.4rem /* 20/50 */;
+}
+.product .mall .mall-right span {
+  color: red;
+  font-size: 0.28rem /* 14/50 */;
+}
+.product .mall .mall-right button {
+  color: #fff;
+  width: 0.8rem /* 40/50 */;
+  height: 0.4rem /* 20/50 */;
+  background-color: orangered;
+  border-radius: 0.1rem /* 5/50 */;
+}
+.product .notice {
+  padding: 0.1rem /* 5/50 */;
+  height: 0.8rem /* 40/50 */;
+  line-height: 0.4rem /* 20/50 */;
+}
+.product .news {
+  font-size: 0.28rem /* 14/50 */;
+  color: #000;
+}
+.product .news .more {
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.6rem /* 30/50 */;
+  text-align: center;
+  background-color: #ccc;
+  margin: 0.2rem /* 10/50 */;
+}

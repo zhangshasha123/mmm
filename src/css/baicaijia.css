@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  background-color: #f4483e;
+}
+.header .wt50 {
+  width: 1rem /* 50/50 */;
+  height: 1rem /* 50/50 */;
+}
+.header .ids-title {
+  flex: 1;
+  line-height: 1rem /* 50/50 */;
+  font-size: 0.4rem /* 20/50 */;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.couple-title .bcj-title {
+  border-bottom: 1px solid #eee;
+  height: 0.7rem /* 35/50 */;
+}
+.couple-title .bcj-title .bcj-nav {
+  height: 0.7rem /* 35/50 */;
+  width: 100%;
+}
+.couple-title .bcj-title .bcj-nav .bcj-swaper {
+  width: 100%;
+  overflow-x: scroll;
+}
+.couple-title .bcj-title .bcj-nav .bcj-swaper ul {
+  overflow: hidden;
+  width: 160%;
+}
+.couple-title .bcj-title .bcj-nav .bcj-swaper ul li {
+  height: 0.7rem /* 35/50 */;
+  font-size: 0.28rem /* 14/50 */;
+  line-height: 0.7rem /* 35/50 */;
+  float: left;
+}
+.couple-title .bcj-title .bcj-nav .bcj-swaper ul li a {
+  display: inline-block;
+  color: #000;
+  text-align: center;
+  margin: 0 0.12rem /* 6/50 */;
+}
+.bcj-list .products .product {
+  margin-top: 0.2rem /* 10/50 */;
+  background-color: #fff;
+  display: flex;
+  padding: 0 0.2rem /* 10/50 */;
+}
+.bcj-list .products .product .list-left img {
+  width: 2.4rem /* 120/50 */;
+  height: 2.4rem /* 120/50 */;
+}
+.bcj-list .products .product .list-right {
+  flex: 1;
+  padding-left: 0.2rem /* 10/50 */;
+}
+.bcj-list .products .product .list-right .mail {
+  height: 0.4rem /* 20/50 */;
+  line-height: 0.4rem /* 20/50 */;
+  font-size: 0.24rem /* 12/50 */;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.2rem /* 10/50 */;
+}
+.bcj-list .products .product .list-right .count {
+  padding-top: 0.2rem /* 10/50 */;
+}
+.bcj-list .products .product .list-right .count span:first-child {
+  color: red;
+  font-size: 0.32rem /* 16/50 */;
+}
+.bcj-list .products .product .list-right .count span:last-child {
+  color: #ccc;
+  text-decoration: line-through;
+  padding-left: 0.1rem /* 5/50 */;
+}
+.bcj-list .products .product .list-right .icon i {
+  width: 1.6rem /* 80/50 */;
+  height: 0.28rem /* 14/50 */;
+  border: 1px solid #f4483e;
+  border-radius: 0.14rem /* 7/50 */;
+  display: inline-block;
+  background-color: #ffb7b7;
+  text-align: center;
+  position: relative;
+}
+.bcj-list .products .product .list-right .icon i em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background-color: #f4483e;
+}
+.bcj-list .products .product .list-right .icon i span {
+  color: #fff;
+}
+.bcj-list .products .product .list-right .icon b {
+  color: #f4483e;
+}
+.bcj-list .products .product .list-right .bcj-bd {
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.5rem /* 25/50 */;
+  margin-top: 0.4rem /* 20/50 */;
+}
+.bcj-list .products .product .list-right .bcj-bd a:first-child {
+  border: 1px dotted red;
+  float: left;
+  padding: 0 0.1rem /* 5/50 */;
+}
+.bcj-list .products .product .list-right .bcj-bd a:last-child {
+  float: right;
+  display: block;
+  background-color: #ff5e5d;
+  color: #fff;
+  border-radius: 0.1rem /* 5/50 */;
+  padding: 0 0.1rem /* 5/50 */;
+}

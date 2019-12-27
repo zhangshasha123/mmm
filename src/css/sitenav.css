@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  background-color: #ff841d;
+}
+.header .wt50 {
+  width: 1rem /* 50/50 */;
+  height: 1rem /* 50/50 */;
+}
+.header .ids-title {
+  flex: 1;
+  line-height: 1rem /* 50/50 */;
+  font-size: 0.4rem /* 20/50 */;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.product-list .link {
+  width: 6rem /* 300/50 */;
+  float: none;
+  margin: 0.2rem /* 10/50 */ auto;
+  background-color: pink;
+  overflow: hidden;
+}
+.product-list .link a {
+  display: block;
+  padding: 0.2rem /* 10/50 */ 0.16rem /* 8/50 */;
+  float: left;
+  border: 1px solid #ccc;
+}

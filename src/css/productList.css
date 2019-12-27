@@ -1,0 +1,66 @@
+.bread {
+  height: 0.8rem /* 40/50 */;
+  background-color: #e6e6e6;
+  line-height: 0.8rem /* 40/50 */;
+  position: relative;
+  font-size: 0.32rem /* 16/50 */;
+  padding-left: 0.3rem /* 15/50 */;
+}
+.bread a {
+  color: #000;
+}
+.bread .selected {
+  position: absolute;
+  right: 0.3rem /* 15/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+  border: 1px solid #ccc;
+}
+.products .pro-introduce .pro-list {
+  overflow: hidden;
+  padding: 0.2rem /* 10/50 */;
+  border-bottom: 1px solid #ccc;
+}
+.products .pro-introduce .pro-list .pro-into {
+  display: flex;
+}
+.products .pro-introduce .pro-list .pro-into .pro-left {
+  width: 2rem /* 100/50 */;
+}
+.products .pro-introduce .pro-list .pro-into .pro-left img {
+  height: 2rem /* 100/50 */;
+  width: 2rem /* 100/50 */;
+}
+.products .pro-introduce .pro-list .pro-into .pro-right {
+  flex: 1;
+  height: 2rem /* 100/50 */;
+  padding-left: 0.2rem /* 10/50 */;
+}
+.products .pro-introduce .pro-list .pro-into .pro-right .top {
+  color: #000;
+  font-size: 0.28rem /* 14/50 */;
+}
+.products .pro-introduce .pro-list .pro-into .pro-right .price {
+  color: red;
+  font-size: 0.32rem /* 16/50 */;
+  margin-top: 0.2rem /* 10/50 */;
+}
+.pages {
+  height: 0.8rem /* 40/50 */;
+  background-color: #e6e6e6;
+  display: flex;
+}
+.pages div {
+  flex: 1;
+  line-height: 0.8rem /* 40/50 */;
+  text-align: center;
+}
+.pages div button {
+  width: 1.2rem /* 60/50 */;
+  height: 0.6rem /* 30/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+}
+.pages div form select {
+  width: 1.2rem /* 60/50 */;
+  height: 0.6rem /* 30/50 */;
+  border: 1px solid #ccc;
+}

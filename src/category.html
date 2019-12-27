@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="logo">
+            <a href="" title="慢慢买">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="appload">
+            <a href="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 搜索框 -->
+    <section class="search">
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button>搜索</button>
+    </section>
+    <!-- 比价商品详情 -->
+    <section class="category">
+        <div class="rows">
+            <ul class="lists">
+                <!-- 坑 -->
+                <!-- <li id="title">
+                    <a href="#" class="title" data-id="{{i}}">{{v.title}}<strong>⬇</strong> </a>
+                    <ul class="category-list hide">
+                        坑
+                        <li class="ct-list">
+                            <a href="">手机</a>
+                        </li>
+                        <li class="ct-list">
+                            <a href="">手机</a>
+                        </li>
+                    </ul>
+                </li> -->
+
+            </ul>
+        </div>
+
+    </section>
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="login">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"> <strong> ^ </strong> 返回顶部</a>
+        </div>
+        <div class="downLoad">
+            <p>
+                <a href="">手机app下载</a>
+                <a href="">慢慢买手机版</a> --掌声比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <li id="title">
+
+            <a href="#" class="title" data-id="{{v.titleId}}">{{v.title}}<strong>⬇</strong> </a>
+            <ul id="{{v.titleId}}" class="category-list hide">
+                <!-- 坑 -->
+            </ul>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <li class="ct-list">
+            <a href="productlist.html?categoryid={{v.categoryId}}">{{v.category}}</a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/category.js"></script>
+</body>
+
+</html>

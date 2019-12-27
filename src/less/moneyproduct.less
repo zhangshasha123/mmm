@@ -1,0 +1,174 @@
+.header{
+    display: flex;
+    .wt50{
+        width: 1rem /* 50/50 */;
+        height: 1rem /* 50/50 */;
+    }
+    .ids-title{
+        flex: 1;
+        line-height: 1rem /* 50/50 */;
+        font-size: .4rem /* 20/50 */;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    } 
+}
+ .money-product{
+     .dis-total{
+         padding: .2rem /* 10/50 */;
+     .dis-title{
+         h3{
+             font-size: .32rem /* 16/50 */;
+             color: #000;
+             font-weight: bold;
+             height: .6rem /* 30/50 */;
+             line-height: .6rem /* 30/50 */;
+         }
+         .mall{
+            
+             margin:.6rem /* 30/50 */ .2rem /* 10/50 */ .1rem /* 5/50 */ .1rem /* 5/50 */;
+             
+         }
+     }
+     .dis-img{
+         display: flex;
+         .content{
+             flex: 1;
+             font-size: .28rem /* 14/50 */;
+             color: #606060;
+             p{
+                 margin-top: .1rem /* 5/50 */;
+             }
+         }
+         img{
+             height: 2.4rem /* 120/50 */;
+             width: 2.4rem /* 120/50 */;
+         }
+     }
+
+    .area{
+        width: 100%;
+        height: 2rem /* 100/50 */;
+        // background-color: pink;
+        position: relative;
+        margin-top: .3rem /* 15/50 */;
+        z-index: 999;
+        .drop{
+             position: absolute;
+             left: 50%;
+             transform: translateX(-50%);
+            //  background-color: skyblue;
+             width:30% ;
+             height: 2rem /* 100/50 */;
+             overflow-y: scroll;
+            //  overflow: hidden;
+            .list{
+                background-color: #fff;
+                
+                li{
+                //   height: .4rem /* 20/50 */;
+                //   line-height: .3rem /* 15/50 */;
+                  padding:0 .2rem /* 10/50 */;
+                  overflow: hidden;
+                  border-bottom: 1px dotted #ccc;
+                  
+                  a{
+                      display: block;
+                      float: left;
+                      color: #000;
+                      
+                  }
+                  span{
+                      float: right;
+                      color: red;
+                  }
+                }
+            }
+        }
+
+    }
+     .buy{
+         background-color: #ff9000;
+         width: 90%;
+         height: .6rem /* 30/50 */;
+         text-align: center;
+         margin-left: 5%;
+         margin-top: .6rem /* 30/50 */;
+         font-size: .32rem /* 16/50 */;
+         color: #fff;
+     }
+
+     .message{     
+         width: 100%; 
+         margin-top: .6rem /* 30/50 */; 
+         img{
+            display: block;
+            width: 100%;
+            height: auto;
+         }
+     }
+     .send{
+        position: relative;
+         .mt10{
+             margin: .2rem /* 10/50 */;
+             font-size: .28rem /* 14/50 */;
+         }
+         .form{
+             width: 98%;
+            
+            textarea{
+                width: 100%;
+                height: 1.36rem /* 68/50 */;
+                border: 1px solid #ccc;
+            }
+
+         }
+
+         button{
+             width: 1.2rem /* 60/50 */;
+             height: .6rem /* 30/50 */;
+             background-color: #ff900f;
+            //  border-radius: .1rem /* 5/50 */;
+             position: absolute;
+             right: .16rem /* 8/50 */;
+             bottom: .06rem /* 3/50 */;
+         }
+     }
+     .new{
+         height: .6rem /* 30/50 */;
+         line-height: .6rem /* 30/50 */;
+         font-size: .28rem /* 14/50 */;
+     }
+     .news-list{
+         li{
+             display: flex;
+             img{
+                 
+                 width: .8rem /* 40/50 */;
+                 height: .8rem /* 40/50 */;
+                 border-radius: .4rem /* 20/50 */;
+             }
+             .news-content{
+                 flex: 1;
+                 padding-left: .2rem /* 10/50 */;
+                 
+                 .title{
+                     overflow: hidden;
+                     margin-bottom: .2rem /* 10/50 */;
+                    & span:nth-of-type(1){
+                        color: skyblue;
+                        float: left;
+                    }
+                    & span:nth-of-type(2){
+                      
+                       float: right;
+                   }
+                 }
+                 p{  
+                     font-size: .28rem /* 14/50 */;
+                 }
+             }
+         }
+     }
+    }
+ }

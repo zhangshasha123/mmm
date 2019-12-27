@@ -47,6 +47,7 @@ body {
   font: 12px/1.5 'Microsoft YaHei', '宋体', Tahoma, Arial, sans-serif;
   color: #555;
   background-color: #f7f7f7;
+  overflow-x: auto;
 }
 /*去除边框*/
 fieldset,
@@ -122,52 +123,87 @@ i {
   -webkit-box-orient: vertical;
 }
 .header {
-  height: 2rem;
-  background: #ff841d;
-  border-bottom: 0.04rem solid #e6e6e6;
-  position: relative;
+  width: 100%;
+  height: 1rem /* 100/50 */;
+  background-color: #ff841d;
 }
 .header .logo {
-  padding: 0.48rem;
   width: 75%;
-  margin-left: 0.2rem;
+  height: 100%;
   float: left;
+  padding: 0.2rem /* 10/50 */;
 }
 .header .logo img {
-  max-height: 1rem;
+  height: 0.5rem /* 25/50*/;
+  line-height: 0.5rem /* 25/50 */;
+  vertical-align: middle;
+}
+.header .appload {
+  padding: 0.2rem /* 10/50 */;
+  float: right;
+  height: 100%;
+}
+.header .appload img {
+  height: 0.68rem /* 34/50 */;
+  width: 0.68rem /* 34/50 */;
+}
+.search {
+  width: 100%;
+  height: 1rem /* 50/50 */;
+  padding: 10px;
+}
+.search input {
+  width: 75%;
+  height: 0.6rem /* 30/50 */;
+  background-color: #f1f1f1;
+  border-radius: 0.2rem /* 10/50 */;
+  text-indent: 2em;
+  padding-left: 0.2rem /* 10/50 */;
+}
+.search button {
+  height: 0.6rem /* 30/50 */;
+  width: 1.3rem /* 65/50 */;
+  background-color: #ff841d;
+  border-radius: 0.3rem /* 15/50 */;
+}
+.footer {
+  background-color: #e6e6e6;
+  border: 1px solid #ccc;
+}
+.footer .login {
+  height: 0.6rem /* 30/50 */;
+  width: 100%;
   overflow: hidden;
+  border-bottom: 1px solid #ccc;
 }
-.header .appdown {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0.28rem;
-}
-.header .appdown img {
-  max-height: 1.36rem;
-  overflow: hidden;
-}
-#foot .foot_top {
-  border-top: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-  height: 34px;
-  line-height: 34px;
-  margin-top: 25px;
-  clear: both;
-  background: #efefef;
-}
-#foot .foot_top a {
-  box-sizing: border-box;
+.footer .login a {
+  font-size: 0.28rem /* 14/50 */;
+  display: block;
+  height: 0.6rem /* 30/50 */;
+  width: 33.3%;
   float: left;
-  font-size: 14px;
-  border-right: 1px solid #c4c4c4;
-  width: 30%;
+  line-height: 0.6rem /* 30/50 */;
+  text-align: center;
+  color: #000;
+  border-left: 1px solid #ccc;
+}
+.footer .login a:last-child {
+  border-left: 1px solid #ccc;
+}
+.footer .downLoad p {
+  margin-top: 0.2rem /* 10/50 */;
+  height: 0.4rem /* 20/50 */;
+  line-height: 0.4rem /* 20/50 */;
   text-align: center;
 }
-#foot .footer {
+.footer .downLoad p a:first-child {
+  color: red;
+}
+.footer .downLoad p a:last-child {
+  color: #000;
+}
+.footer .downLoad p:last-child {
+  height: 0.2rem /* 10/50 */;
+  line-height: 0.2rem /* 10/50 */;
   text-align: center;
-  font-size: 12px;
-  padding: 15px 0;
-  color: #666;
-  background: #efefef;
 }

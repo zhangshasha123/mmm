@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  background-color: #ff841d;
+}
+.header .wt50 {
+  width: 1rem /* 50/50 */;
+  height: 1rem /* 50/50 */;
+}
+.header .ids-title {
+  flex: 1;
+  line-height: 1rem /* 50/50 */;
+  font-size: 0.4rem /* 20/50 */;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.product-list {
+  position: relative;
+}
+.product-list .hd .list .form {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.product-list .hd .list .form .title {
+  flex: 1;
+  text-align: center;
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.6rem /* 30/50 */;
+  font-size: 0.28rem /* 14/50 */;
+}
+.product-list .hd .list .form .title a {
+  color: #000;
+  display: block;
+}
+.product-list .hd .hide {
+  position: absolute;
+  top: 0.61rem /* 30/50 */;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+}
+.product-list .hd .hide .active.hidden {
+  display: none;
+}
+.product-list .hd .hide .active .one {
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.6rem /* 30/50 */;
+  border-bottom: 1px solid #ccc;
+  text-indent: 0.1rem /* 5/50 */;
+}
+.product-list .hd .hide .active .one a {
+  display: block;
+  color: #000;
+  font-size: 0.28rem /* 14/50 */;
+}
+.product-list .ids-products ul {
+  overflow: hidden;
+  margin-top: 0.2rem /* 10/50 */;
+}
+.product-list .ids-products ul li {
+  float: left;
+  margin-top: 0.2rem /* 10/50 */;
+  margin-right: 0.1rem /* 5/50 */;
+  margin-bottom: 0.1rem /* 5/50 */;
+  background-color: #fff;
+  padding: 0.2rem /* 10/50 */;
+  width: 48%;
+  overflow: hidden;
+}
+.product-list .ids-products ul li .ids-product .out {
+  width: 2.8rem /* 140/50 */;
+}
+.product-list .ids-products ul li .ids-product .out img {
+  display: block;
+  margin: 0 auto;
+  width: 2.8rem /* 140/50 */;
+  height: 2.8rem /* 140/50 */;
+}
+.product-list .ids-products ul li .ids-product .into p:first-child {
+  color: #000;
+  text-align: left;
+  padding: 0.1rem /* 5/50 */;
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.3rem /* 15/50 */;
+}
+.product-list .ids-products ul li .ids-product .into .onto {
+  height: 0.6rem /* 30/50 */;
+  line-height: 0.6rem /* 30/50 */;
+  overflow: hidden;
+}
+.product-list .ids-products ul li .ids-product .into .onto span:first-child {
+  color: #f8601D;
+  font-size: 0.28rem /* 14/50 */;
+  float: left;
+}
+.product-list .ids-products ul li .ids-product .into .onto span:last-child {
+  color: #fff;
+  font-size: 0.28rem /* 14/50 */;
+  float: right;
+  background-color: #ff841d;
+  display: block;
+  width: 1.2rem /* 60/50 */;
+  text-align: center;
+  border-radius: 0.1rem /* 5/50 */;
+}

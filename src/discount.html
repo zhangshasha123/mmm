@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/discount.css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="wt50"></div>
+        <div class="ids-title">国内折扣</div>
+        <div class="appload">
+            <a href="app下载">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 主体内容 -->
+    <main class="money-product">
+        <div class="dis-total">
+            <div class="add">
+                <!-- <div class="dis-title">
+                    <h3>西域美农新疆特产五星和田红枣250g*2</h3>
+                    <div class="mall">
+                        <span>京东商城</span>
+
+                        <span>chenjin
+                        / 慢慢买</span>
+                    </div>
+                </div>
+                <div class="dis-img">
+                    <div class="content">
+                        <p>原价25.9一斤，凑满5件只要99元价格。 枣子紧实，入口甜爽。适合公司人多的买吧，价格还是不错的。</p>
+
+                        <p>西域美农新疆特产五星和田红枣250g*2</p>
+                    </div>
+                    <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="西域美农新疆特产五星和田红枣250g*2">
+                </div>
+                <div class="buy">前往购买</div> -->
+            </div>
+
+            <div class="message">
+                <img src="images/mmbweixin2.png" alt="">
+            </div>
+            <div class="send">
+                <div class="mt10">发表评论</div>
+                <div class="form"><textarea name="" id="" rows="3"></textarea></div>
+                <button>发表评论</button>
+
+            </div>
+            <div class="new">最新评论</div>
+            <div class="news-list">
+                <ul>
+                    <li>
+                        <img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg">
+                        <div class="news-content">
+                            <div class="title">
+                                <span>赶鸭子上架</span>
+                                <span>2019/12/25  15：01：00</span>
+                            </div>
+                            <p class="content">比超级便宜</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script type="text/html" id="tpl">
+        <div class="dis-title">
+            <h3>{{result.productName}}</h3>
+            <div class="mall">
+                <span>{{result.productFrom}}</span>
+
+                <span>{{result.productTips}}</span>
+            </div>
+        </div>
+        <div class="dis-img">
+            <div class="content">
+                <p>{{result.productInfo}}</p>
+
+                <p>{{result.productName}}</p>
+            </div>
+            <img src="{{result.productImg.src}}" alt="{{result.productImg.alt}}">
+        </div>
+        <div class="buy">前往购买</div>
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/discount.js"></script>
+
+</body>
+
+</html>
