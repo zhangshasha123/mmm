@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "art-template": "^4.13.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mime": "^2.4.4"
   },
   "devDependencies": {
